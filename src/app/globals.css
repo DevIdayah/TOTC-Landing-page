@@ -17,17 +17,78 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+/*color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.input {
+  @apply border border-double rounded-full border-secondary placeholder:px-3 py-3 outline-none px-5 mt-3;
+}
+.card{
+  @apply border rounded-xl placeholder:px-5 text-lg font-normal py-3 outline-none px-5 mt-3
+}
+
+.cloud-card{
+  @apply rounded-2xl md:shadow-black shadow-md md:shadow-2xl text-center px-10
+}
+.paragraph{
+  @apply text-accent md:text-lg font-medium ml-3;
+}
+.features-paragraph{
+  @apply text-accent md:text-lg font-normal;
+
+}
+.picture{
+  @apply w-96 h-44 object-center object-cover rounded-xl;
+}
+.Readmore{
+  @apply text-accent md:text-xl font-normal pt-5;
+}
+.Readmore-button{
+  @apply bg-container bg-opacity-20 text-accent rounded-full px-5 py-1;
+}
+.Search-button{
+  @apply bg-white border rounded-md text-xl font-semibold px-5 py-1
+}
+.Overview-button{
+  @apply bg-accent bg-opacity-10 rounded-xl px-7 py-3 text-xl font-bold text-accent
+}
+
+.instructors {
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("/image/instructor.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.students {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/image/student.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.heroimage{
+  background: url("/image/hero-img4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-img{
+background: url("/image/hero-img5.png");
+background-repeat: no-repeat;
+background-position:center ;
+background-size: cover;
 }
