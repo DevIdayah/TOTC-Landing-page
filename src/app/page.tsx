@@ -6,7 +6,7 @@ export default function Home() {
      <section className="one bg-primary rounded-b-[5rem]">
       <div className="md:mx-20 mx-5">
         <div className="flex justify-between items-center">
-          <div><Image src="/image/logo.png" alt="" width={100} height={25}/></div>
+          <div><Image src="/image/Logo.png" alt="" width={100} height={25}/></div>
           <div className="md:block hidden">
             <ul className="flex space-x-20 text-white">
               <div className="flex items-center space-x-10 text-xl">
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-2 md:block hidden relative">
-            <Image src="/image/hero-Img.png" alt="" width={500} height={100} className="w-1/2 mx-auto" />
+            <Image src="/image/hero-img.png" alt="" width={500} height={100} className="w-1/2 mx-auto" />
             <Image
               src="/image/subhero1.png"
               alt=""
@@ -223,7 +223,7 @@ export default function Home() {
         </div>
         <div className="">
           <Image
-            src="/image/classroom teacher.png"
+            src="/image/Classroom teacher.png"
             alt=""
             width={500}
             height={24}
@@ -312,7 +312,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div><Image src="/image/class management.png" alt="" width={500} height={24}/></div>
+          <div><Image src="/image/Class management.png" alt="" width={500} height={24}/></div>
           <div><Image src="/image/one-on-one.png" alt="" width={500} height={24} /></div>
           <div className="px-10">
             <div>
@@ -407,7 +407,7 @@ export default function Home() {
       <div className="grid md:grid-cols-2">
         <div className="md:px-16 md:pb-0 pb-5">
           <div className="pb-10">
-            <Image src="/image/HeroImg2.png" alt="" width={500} height={100} className="border rounded-3xl" />
+            <Image src="/image/Heroimg2.png" alt="" width={500} height={100} className="border rounded-3xl" />
           </div>
           <div>
             <a
