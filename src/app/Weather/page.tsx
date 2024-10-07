@@ -3,6 +3,16 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image"; 
 
+
+import {sunny,cloud,lighting,rainning,snow}from "../../../public/image"
+
+  interface weatherData{
+    name: string;
+    main: {
+        temperature: number;
+        humidity: number;
+    }
+  }
 const Weather = () => {
   
    
@@ -15,7 +25,7 @@ const Weather = () => {
     const CITY = "Ilorin";
   
   
-    const getWeatherIcon = (description) => {
+    const getWeatherIcon = (description: string | string[]) => {
       if (description.includes("Clear")) return sunny; 
       if (description.includes("Rain")) return raining; 
       if (description.includes("Snow")) return snow; 
@@ -60,7 +70,7 @@ const Weather = () => {
           <h2>Weather in {weatherData?.name}</h2>
         </div>
         <p>Temperature: {weatherData?.main.temp} °C</p>
-        <p>Condition: {weatherData?.weather[0].main}</p>
+        <p>Condition: {weatherData?.weather[0].description}</p>
         <p>Humidity: {weatherData?.main.humidity}%</p>
 
       </div>
